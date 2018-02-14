@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9E26A79874B6C4A4E8A2BED /* Pods_TemperatureApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F81D123FA212B0F211D519 /* Pods_TemperatureApp.framework */; };
+		BA3378A6202DE59C005C0395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378A5202DE59C005C0395 /* AppDelegate.swift */; };
+		BA3378AB202DE59C005C0395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3378A9202DE59C005C0395 /* Main.storyboard */; };
+		BA3378B0202DE59C005C0395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3378AF202DE59C005C0395 /* Assets.xcassets */; };
+		BA3378B3202DE59C005C0395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3378B1202DE59C005C0395 /* LaunchScreen.storyboard */; };
+		BA3378BD202DE7FD005C0395 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378BC202DE7FD005C0395 /* MainTableViewController.swift */; };
+		BA3378BF202F27FA005C0395 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378BE202F27FA005C0395 /* MQTTManager.swift */; };
+		BA3378C2202F2F0C005C0395 /* Temperature.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */; };
+		BA3378C4202F3049005C0395 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378C3202F3049005C0395 /* Temperature.swift */; };
+		BA54694C2033319B00903760 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54694B2033319B00903760 /* Config.swift */; };
+		BAE645B22031FA1100C893C5 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE645B12031FA1100C893C5 /* GraphViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D67147AB2AB7AF781C5D422 /* Pods-TemperatureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp.release.xcconfig"; sourceTree = "<group>"; };
+		BA3378A2202DE59C005C0395 /* TemperatureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3378A5202DE59C005C0395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA3378AA202DE59C005C0395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA3378AF202DE59C005C0395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA3378B2202DE59C005C0395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA3378B4202DE59C005C0395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3378BC202DE7FD005C0395 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		BA3378BE202F27FA005C0395 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		BA3378C1202F2F0C005C0395 /* Temperature.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Temperature.xcdatamodel; sourceTree = "<group>"; };
+		BA3378C3202F3049005C0395 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		BA3378C6202F9E80005C0395 /* Moscapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moscapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA54694B2033319B00903760 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BAE645B12031FA1100C893C5 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		E9970DDA353C42DA00E848DA /* Pods-TemperatureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F4F81D123FA212B0F211D519 /* Pods_TemperatureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperatureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA33789F202DE59C005C0395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E26A79874B6C4A4E8A2BED /* Pods_TemperatureApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F6E1614F89C4C36B0261653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA3378C6202F9E80005C0395 /* Moscapsule.framework */,
+				F4F81D123FA212B0F211D519 /* Pods_TemperatureApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BF7274AD85EF01BC64FC817 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9970DDA353C42DA00E848DA /* Pods-TemperatureApp.debug.xcconfig */,
+				1D67147AB2AB7AF781C5D422 /* Pods-TemperatureApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA337899202DE59C005C0395 = {
+			isa = PBXGroup;
+			children = (
+				BA3378A4202DE59C005C0395 /* TemperatureApp */,
+				BA3378A3202DE59C005C0395 /* Products */,
+				9BF7274AD85EF01BC64FC817 /* Pods */,
+				4F6E1614F89C4C36B0261653 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA3378A3202DE59C005C0395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3378A2202DE59C005C0395 /* TemperatureApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA3378A4202DE59C005C0395 /* TemperatureApp */ = {
+			isa = PBXGroup;
+			children = (
+				BA3378BB202DE6E8005C0395 /* Supporting Files */,
+				BA3378A9202DE59C005C0395 /* Main.storyboard */,
+				BA3378B4202DE59C005C0395 /* Info.plist */,
+				BA3378C3202F3049005C0395 /* Temperature.swift */,
+				BA3378BC202DE7FD005C0395 /* MainTableViewController.swift */,
+				BAE645B12031FA1100C893C5 /* GraphViewController.swift */,
+				BA3378BE202F27FA005C0395 /* MQTTManager.swift */,
+				BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */,
+				BA54694B2033319B00903760 /* Config.swift */,
+			);
+			path = TemperatureApp;
+			sourceTree = "<group>";
+		};
+		BA3378BB202DE6E8005C0395 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3378A5202DE59C005C0395 /* AppDelegate.swift */,
+				BA3378AF202DE59C005C0395 /* Assets.xcassets */,
+				BA3378B1202DE59C005C0395 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA3378A1202DE59C005C0395 /* TemperatureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3378B7202DE59C005C0395 /* Build configuration list for PBXNativeTarget "TemperatureApp" */;
+			buildPhases = (
+				BE84A897319FA8DDBB9C80F4 /* [CP] Check Pods Manifest.lock */,
+				BA33789E202DE59C005C0395 /* Sources */,
+				BA33789F202DE59C005C0395 /* Frameworks */,
+				BA3378A0202DE59C005C0395 /* Resources */,
+				D286B4ABDD6E78D587381614 /* [CP] Embed Pods Frameworks */,
+				DBEE2CB2C7CE3F5C3FD2BFF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TemperatureApp;
+			productName = TemperatureApp;
+			productReference = BA3378A2202DE59C005C0395 /* TemperatureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA33789A202DE59C005C0395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = radoslav.genov.1992;
+				TargetAttributes = {
+					BA3378A1202DE59C005C0395 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BA33789D202DE59C005C0395 /* Build configuration list for PBXProject "TemperatureApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA337899202DE59C005C0395;
+			productRefGroup = BA3378A3202DE59C005C0395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA3378A1202DE59C005C0395 /* TemperatureApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA3378A0202DE59C005C0395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3378B3202DE59C005C0395 /* LaunchScreen.storyboard in Resources */,
+				BA3378B0202DE59C005C0395 /* Assets.xcassets in Resources */,
+				BA3378AB202DE59C005C0395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE84A897319FA8DDBB9C80F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemperatureApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D286B4ABDD6E78D587381614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBEE2CB2C7CE3F5C3FD2BFF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA33789E202DE59C005C0395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3378BD202DE7FD005C0395 /* MainTableViewController.swift in Sources */,
+				BA3378BF202F27FA005C0395 /* MQTTManager.swift in Sources */,
+				BA3378C2202F2F0C005C0395 /* Temperature.xcdatamodeld in Sources */,
+				BA54694C2033319B00903760 /* Config.swift in Sources */,
+				BAE645B22031FA1100C893C5 /* GraphViewController.swift in Sources */,
+				BA3378C4202F3049005C0395 /* Temperature.swift in Sources */,
+				BA3378A6202DE59C005C0395 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA3378A9202DE59C005C0395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA3378AA202DE59C005C0395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA3378B1202DE59C005C0395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA3378B2202DE59C005C0395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA3378B5202DE59C005C0395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA3378B6202DE59C005C0395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA3378B8202DE59C005C0395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9970DDA353C42DA00E848DA /* Pods-TemperatureApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYAFDNAL89;
+				INFOPLIST_FILE = TemperatureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = radoslav.genov.1992.TemperatureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA3378B9202DE59C005C0395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D67147AB2AB7AF781C5D422 /* Pods-TemperatureApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYAFDNAL89;
+				INFOPLIST_FILE = TemperatureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = radoslav.genov.1992.TemperatureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA33789D202DE59C005C0395 /* Build configuration list for PBXProject "TemperatureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3378B5202DE59C005C0395 /* Debug */,
+				BA3378B6202DE59C005C0395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA3378B7202DE59C005C0395 /* Build configuration list for PBXNativeTarget "TemperatureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3378B8202DE59C005C0395 /* Debug */,
+				BA3378B9202DE59C005C0395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA3378C1202F2F0C005C0395 /* Temperature.xcdatamodel */,
+			);
+			currentVersion = BA3378C1202F2F0C005C0395 /* Temperature.xcdatamodel */;
+			path = Temperature.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA33789A202DE59C005C0395 /* Project object */;
+}
