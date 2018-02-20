@@ -13,15 +13,23 @@ import CoreData
 
 class MainTableViewController: UITableViewController, UISplitViewControllerDelegate {
     
-    // MARK: - Table view data source
     @IBOutlet weak var temperature: UILabel!
     let mqttManager = MQTTManager.sharedInstance
-    var container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
+//    var container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
+    
+    @IBAction func socketSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            mqttManager.publishToTopic(topic: Topics.GPIO.rawValue, payload: "On")
+        } else {
+            mqttManager.publishToTopic(topic: Topics.GPIO.rawValue, payload: "Off")
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.splitViewController?.delegate = self
     }
+
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         return true

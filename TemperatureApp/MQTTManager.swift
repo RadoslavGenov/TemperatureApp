@@ -9,6 +9,11 @@
 import UIKit
 import CocoaMQTT
 
+enum Topics: String {
+    case Temperature = "rpi/temp"
+    case GPIO = "rpi/gpio"
+}
+
 class MQTTManager: NSObject, CocoaMQTTDelegate {
     
     static let sharedInstance = MQTTManager()
@@ -36,7 +41,7 @@ class MQTTManager: NSObject, CocoaMQTTDelegate {
 extension MQTTManager {
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
         if ack == .accept {
-            mqttClient.subscribe("rpi/sensor")
+            mqttClient.subscribe(Topics.Temperature.rawValue)
         } else {
             print("Not Connected")
         }
@@ -52,7 +57,9 @@ extension MQTTManager {
     
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16) {
         if let string = message.string {
-            NotificationCenter.default.post(name: NSNotification.Name.init("post_temperature"), object: string)
+            if message.topic == Topics.Temperature.rawValue {
+                NotificationCenter.default.post(name: NSNotification.Name.init("post_temperature"), object: string)
+            }
         }
     }
     
@@ -78,6 +85,14 @@ extension MQTTManager {
     
     func mqtt(mqtt: CocoaMQTT, didConnect host: String, port: Int) {
         
+    }
+    
+    func publishToTopic(topic: String, payload: String) {
+        if mqttClient.connState == .connected {
+            mqttClient.publish(topic, withString: payload)
+        } else {
+            print("Can't publish to \(topic). Not connected.")
+        }
     }
 }
 
