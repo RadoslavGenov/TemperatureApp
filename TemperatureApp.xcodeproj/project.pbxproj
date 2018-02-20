@@ -17,7 +17,6 @@
 		BA3378C2202F2F0C005C0395 /* Temperature.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */; };
 		BA3378C4202F3049005C0395 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378C3202F3049005C0395 /* Temperature.swift */; };
 		BA54694C2033319B00903760 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54694B2033319B00903760 /* Config.swift */; };
-		BAE645B22031FA1100C893C5 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE645B12031FA1100C893C5 /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		BA3378C3202F3049005C0395 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		BA3378C6202F9E80005C0395 /* Moscapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moscapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA54694B2033319B00903760 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		BAE645B12031FA1100C893C5 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		E9970DDA353C42DA00E848DA /* Pods-TemperatureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F4F81D123FA212B0F211D519 /* Pods_TemperatureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperatureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,12 +91,11 @@
 				BA3378BB202DE6E8005C0395 /* Supporting Files */,
 				BA3378A9202DE59C005C0395 /* Main.storyboard */,
 				BA3378B4202DE59C005C0395 /* Info.plist */,
-				BA3378C3202F3049005C0395 /* Temperature.swift */,
-				BA3378BC202DE7FD005C0395 /* MainTableViewController.swift */,
-				BAE645B12031FA1100C893C5 /* GraphViewController.swift */,
-				BA3378BE202F27FA005C0395 /* MQTTManager.swift */,
 				BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */,
 				BA54694B2033319B00903760 /* Config.swift */,
+				BA3378BE202F27FA005C0395 /* MQTTManager.swift */,
+				BA3378C3202F3049005C0395 /* Temperature.swift */,
+				BA3378BC202DE7FD005C0395 /* MainTableViewController.swift */,
 			);
 			path = TemperatureApp;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 				BA3378BF202F27FA005C0395 /* MQTTManager.swift in Sources */,
 				BA3378C2202F2F0C005C0395 /* Temperature.xcdatamodeld in Sources */,
 				BA54694C2033319B00903760 /* Config.swift in Sources */,
-				BAE645B22031FA1100C893C5 /* GraphViewController.swift in Sources */,
 				BA3378C4202F3049005C0395 /* Temperature.swift in Sources */,
 				BA3378A6202DE59C005C0395 /* AppDelegate.swift in Sources */,
 			);

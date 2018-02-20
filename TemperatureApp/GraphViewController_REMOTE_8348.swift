@@ -8,9 +8,6 @@
 
 import UIKit
 
-<<<<<<< HEAD
-class GraphViewController: UIViewController {
-=======
 protocol GetGraphData {
     func getGraphData(with time: [String], temperature: [String])
     var temperature: [String] { get set }
@@ -20,7 +17,6 @@ protocol GetGraphData {
 class GraphViewController: UIViewController, GetGraphData {
     var temperature = [String]()
     var time = [String]()
->>>>>>> 72d6d6eeb505e0d860feead92c4fb9298196ec29
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +24,6 @@ class GraphViewController: UIViewController, GetGraphData {
         lineGraph()
     }
     
-<<<<<<< HEAD
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-=======
     func populateGraphData(){
         temperature = ["18", "19.5", "16", "23", "25", "30"]
         time = ["14", "15", "16", "17", "18", "19"]
@@ -48,7 +39,6 @@ class GraphViewController: UIViewController, GetGraphData {
     func getGraphData(with time: [String], temperature: [String]) {
         self.temperature = temperature
         self.time = time
->>>>>>> 72d6d6eeb505e0d860feead92c4fb9298196ec29
     }
 }
 

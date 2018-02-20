@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oya-25-OAG">
     <device id="retina4_0" orientation="portrait">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oya-25-OAG">
+    <device id="retina5_9" orientation="portrait">
+>>>>>>> 72d6d6eeb505e0d860feead92c4fb9298196ec29
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +25,11 @@
             <objects>
                 <tableViewController title="Temperature " id="5jM-SC-AZn" customClass="MainTableViewController" customModule="TemperatureApp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hbl-Bw-qy2">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+>>>>>>> 72d6d6eeb505e0d860feead92c4fb9298196ec29
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,7 +62,11 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Sxu-pb-XNF">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="79" width="320" height="44"/>
+=======
+                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+>>>>>>> 72d6d6eeb505e0d860feead92c4fb9298196ec29
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sxu-pb-XNF" id="3an-lv-rQH">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -84,7 +97,11 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="405" id="NXl-im-fDT">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="123" width="320" height="405"/>
+=======
+                                        <rect key="frame" x="0.0" y="123" width="375" height="405"/>
+>>>>>>> 72d6d6eeb505e0d860feead92c4fb9298196ec29
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NXl-im-fDT" id="FLq-Vu-Dm4">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="405"/>
@@ -113,7 +130,7 @@
                             <outlet property="delegate" destination="5jM-SC-AZn" id="V4B-yl-LSF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Temperature Controls" id="VYR-DE-wRu"/>
+                    <navigationItem key="navigationItem" title="TempToGo" id="VYR-DE-wRu"/>
                     <connections>
                         <outlet property="temperature" destination="TvK-em-wxe" id="gGs-Ht-joc"/>
                     </connections>
