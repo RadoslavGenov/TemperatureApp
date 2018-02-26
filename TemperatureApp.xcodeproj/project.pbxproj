@@ -16,7 +16,10 @@
 		BA3378BF202F27FA005C0395 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378BE202F27FA005C0395 /* MQTTManager.swift */; };
 		BA3378C2202F2F0C005C0395 /* Temperature.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */; };
 		BA3378C4202F3049005C0395 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3378C3202F3049005C0395 /* Temperature.swift */; };
+		BA4891F6203EC5F1006243DC /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4891F5203EC5F1006243DC /* GraphView.swift */; };
+		BA4891F8203EC960006243DC /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4891F7203EC960006243DC /* GraphViewController.swift */; };
 		BA54694C2033319B00903760 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54694B2033319B00903760 /* Config.swift */; };
+		BA75EF4A203DE69700969B6D /* CocoaMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA75EF4B203DE69700969B6D /* CocoaMQTT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +35,14 @@
 		BA3378C1202F2F0C005C0395 /* Temperature.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Temperature.xcdatamodel; sourceTree = "<group>"; };
 		BA3378C3202F3049005C0395 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		BA3378C6202F9E80005C0395 /* Moscapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moscapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4891F5203EC5F1006243DC /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		BA4891F7203EC960006243DC /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		BA54694B2033319B00903760 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BA75EF4B203DE69700969B6D /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE1F5EA203DDCE5005FF2CC /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE1F5EC203DDCF8005FF2CC /* ChartsRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChartsRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE1F5EE203DDCFF005FF2CC /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE1F5F0203DDD09005FF2CC /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9970DDA353C42DA00E848DA /* Pods-TemperatureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemperatureApp/Pods-TemperatureApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F4F81D123FA212B0F211D519 /* Pods_TemperatureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperatureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA75EF4A203DE69700969B6D /* CocoaMQTT.framework in Frameworks */,
 				A9E26A79874B6C4A4E8A2BED /* Pods_TemperatureApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +63,11 @@
 		4F6E1614F89C4C36B0261653 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA75EF4B203DE69700969B6D /* CocoaMQTT.framework */,
+				BAE1F5F0203DDD09005FF2CC /* Realm.framework */,
+				BAE1F5EE203DDCFF005FF2CC /* RealmSwift.framework */,
+				BAE1F5EC203DDCF8005FF2CC /* ChartsRealm.framework */,
+				BAE1F5EA203DDCE5005FF2CC /* Charts.framework */,
 				BA3378C6202F9E80005C0395 /* Moscapsule.framework */,
 				F4F81D123FA212B0F211D519 /* Pods_TemperatureApp.framework */,
 			);
@@ -89,13 +105,15 @@
 			isa = PBXGroup;
 			children = (
 				BA3378BB202DE6E8005C0395 /* Supporting Files */,
-				BA3378A9202DE59C005C0395 /* Main.storyboard */,
 				BA3378B4202DE59C005C0395 /* Info.plist */,
+				BA3378A9202DE59C005C0395 /* Main.storyboard */,
 				BA3378C0202F2F0C005C0395 /* Temperature.xcdatamodeld */,
 				BA54694B2033319B00903760 /* Config.swift */,
 				BA3378BE202F27FA005C0395 /* MQTTManager.swift */,
 				BA3378C3202F3049005C0395 /* Temperature.swift */,
 				BA3378BC202DE7FD005C0395 /* MainTableViewController.swift */,
+				BA4891F5203EC5F1006243DC /* GraphView.swift */,
+				BA4891F7203EC960006243DC /* GraphViewController.swift */,
 			);
 			path = TemperatureApp;
 			sourceTree = "<group>";
@@ -140,12 +158,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = radoslav.genov.1992;
 				TargetAttributes = {
 					BA3378A1202DE59C005C0395 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -245,8 +271,10 @@
 			files = (
 				BA3378BD202DE7FD005C0395 /* MainTableViewController.swift in Sources */,
 				BA3378BF202F27FA005C0395 /* MQTTManager.swift in Sources */,
+				BA4891F6203EC5F1006243DC /* GraphView.swift in Sources */,
 				BA3378C2202F2F0C005C0395 /* Temperature.xcdatamodeld in Sources */,
 				BA54694C2033319B00903760 /* Config.swift in Sources */,
+				BA4891F8203EC960006243DC /* GraphViewController.swift in Sources */,
 				BA3378C4202F3049005C0395 /* Temperature.swift in Sources */,
 				BA3378A6202DE59C005C0395 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +316,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -295,6 +324,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -345,6 +375,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -352,6 +383,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

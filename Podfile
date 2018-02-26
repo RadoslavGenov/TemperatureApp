@@ -5,6 +5,5 @@ target 'TemperatureApp' do
   use_frameworks!
   
 pod 'CocoaMQTT'
-pod 'Charts/Realm'
 
 end

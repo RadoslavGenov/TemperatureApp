@@ -10,8 +10,10 @@ import UIKit
 import CoreData
 
 class Temperature: NSManagedObject {
-    class func addTemperature(_ temperature: String, in context: NSManagedObjectContext){
+    class func addTemperature(_ temperature: String, in context: NSManagedObjectContext) -> Temperature {
         let temp = Temperature(context: context)
         temp.celsius = temperature
+        temp.date = Date()
+        return temp
     }
 }
